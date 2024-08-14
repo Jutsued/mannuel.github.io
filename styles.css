@@ -19,6 +19,13 @@ body {
   transition: color 0.3s ease;
 }
 
+.logo-img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 /* Photo Section Styles */
 .photos {
   padding: 50px 0;
