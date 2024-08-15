@@ -6,7 +6,29 @@ body {
 
 /* Navigation Styles */
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust logo size */
+.navbar-brand img {
+    max-height: 30px; /* Adjust as needed */
+    margin-right: 5px;
+}
+
+/* Adjust title font size */
+.navbar-brand {
+    font-size: 18px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+}
+
+/* Ensure the hamburger icon stays on the same line */
+.navbar-toggler {
+    margin-left: auto;
 }
 
 .nav-link {
@@ -191,13 +213,6 @@ body {
 }
 
 @media (max-width: 576px) {
-    .navbar {
-    padding: .5rem .5rem;
-  }
-
-  .navbar-brand {
-    margin-right: .3rem;
-  }
   .service-item {
     width: 100%;
   }
@@ -218,4 +233,19 @@ body {
     width: 120px;
     height: 120px;
   }
+}
+
+/* Adjust the padding for smaller screens */
+@media (max-width: 396px) {
+    .navbar-brand {
+        font-size: 16px;
+    }
+    
+    .navbar-brand img {
+        max-height: 25px;
+    }
+
+    .navbar-nav {
+        font-size: 14px;
+    }
 }
