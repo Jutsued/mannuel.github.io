@@ -7,7 +7,7 @@ document
     // var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
 
-    var mailto_link = `mailto:pabloa.bonilla1@gmail.com?subject=Electrician Services Contact&body=${message}`;
+    var mailto_link = `mailto:EurekaElectricContracting@gmail.com?subject=Electrician Services Contact&body=${message}`;
 
     window.location.href = mailto_link;
   });
