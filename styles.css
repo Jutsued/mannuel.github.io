@@ -10,25 +10,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Adjust logo size */
 .navbar-brand img {
-    max-height: 30px; /* Adjust as needed */
-    margin-right: 5px;
+  max-height: 30px;
+  margin-right: 5px;
 }
 
-/* Adjust title font size */
 .navbar-brand {
-    font-size: 18px; /* Adjust as needed */
-    display: flex;
-    align-items: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 
-/* Ensure the hamburger icon stays on the same line */
 .navbar-toggler {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -57,7 +53,7 @@ body {
   max-height: 500px;
   object-fit: cover;
   width: 100%;
-  margin: 0 auto; /* Center the images */
+  margin: 0 auto;
 }
 
 .carousel-caption h5 {
@@ -200,7 +196,16 @@ body {
   color: #007bff;
 }
 
+@media (max-width: 992px) {
+  .navbar-brand img {
+    height: 30px;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar-brand img {
+    height: 25px;
+  }
   .service-item {
     width: 45%;
   }
@@ -215,6 +220,14 @@ body {
 }
 
 @media (max-width: 576px) {
+  .navbar {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .navbar-brand {
+    margin-right: 0.3rem;
+  }
+
   .service-item {
     width: 100%;
   }
@@ -237,17 +250,16 @@ body {
   }
 }
 
-/* Adjust the padding for smaller screens */
 @media (max-width: 396px) {
-    .navbar-brand {
-        font-size: 16px;
-    }
-    
-    .navbar-brand img {
-        max-height: 25px;
-    }
+  .navbar-brand {
+    font-size: 16px;
+  }
 
-    .navbar-nav {
-        font-size: 14px;
-    }
+  .navbar-brand img {
+    max-height: 25px;
+  }
+
+  .navbar-nav {
+    font-size: 14px;
+  }
 }
