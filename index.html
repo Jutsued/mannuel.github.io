@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eureka Electric Contracting</title>
-    <link rel="stylesheet" href="styles.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,56 +14,77 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation Section -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <a class="navbar-brand" href="#">
-    <img src="./resources/images/logo-transparent.png" alt="Logo">
-    Electrician Services
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-      <li class="nav-item"><a class="nav-link" href="#photos">Photos</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-
-    <header class="hero">
-      <div class="container">
-        <h1>Professional Interior Electrical Services</h1>
-        <p>
-          Your trusted partner for all electrical needs in residential and
-          commercial settings.
-        </p>
+<!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <span class="navbar-brand" href="#">
+        <img
+          src="./resources/images/eureka-blue-background-cropped-transparent.png"
+          alt="Company Logo"
+          class="logo-img"
+        />Electrician Services</span
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="nav-id">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services" id="nav-id">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#photos" id="nav-id">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="nav-id">Contact</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
 
-    <section class="technician" id="about">
-      <div class="container">
-        <div class="technician-info">
+
+     <section class="hero" id="about">
+      <div class="hero-container">
+        <!-- Lightbulb Image-->
+        <div class="lightbulb-background">
+          <img
+            src="./resources/images/eureka-blue-background-cropped-transparent.png"
+            alt="Eureka Lightbulb"
+          />
+        </div>
+
+        <!-- Main Content -->
+        <div class="hero-content">
           <div class="technician-image">
-            <img
-              src="./resources/images/technician.jpg"
-              alt="Technician Image"
-            />
+            <img src="./resources/images/technician.jpg" alt="Technician" />
           </div>
-          <h2>Franklin E. Alvarado - President</h2>
+
+          <h1>
+            <span class="eureka-text">Eureka</span><br />
+            Electric Contracting Corp
+          </h1>
           <p>
-            NYC Licensed, bonded, insured Master Electrician. Expert in low and high
-            voltage, fire alarm systems, and all electrical applications.
+            NYC Licensed, Bonded, Insured Master Electrician. Expert in Low and
+            High Voltage, Fire Alarm Systems, and all Electrical Applications.
           </p>
         </div>
       </div>
     </section>
 
+   <!-- Services Section -->
     <section class="services" id="services">
       <div class="container">
         <h2>Our Services</h2>
@@ -115,7 +135,7 @@
       </div>
     </section>
 
-   <!-- Photo Section -->
+    <!-- Photo Section -->
     <section id="photos" class="photos">
       <div class="container text-center">
         <h2 class="section-title">Our Work</h2>
@@ -134,13 +154,14 @@
             <li data-target="#photoCarousel" data-slide-to="6"></li>
           </ol>
           <div class="carousel-inner">
+            <!-- Carousel Items -->
             <div class="carousel-item active">
               <img
                 src="./resources/images/electrical_installation.JPG"
-                class="d-block w-100"
                 alt="Electrical Installation"
+                class="carousel-img"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Electrical Installation</h5>
                 <p>
                   Installation of electrical panels and breakers in new
@@ -151,24 +172,24 @@
             <div class="carousel-item">
               <img
                 src="./resources/images/lighting_installation.jpg"
-                class="d-block w-100"
                 alt="Lighting Installation"
+                class="carousel-img"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Lighting Installation</h5>
                 <p>
-                  Expert installation of lighting fixtures, enhancing the
-                  ambiance and functionality of spaces.
+                  Expert installation of lighting fixtures, enhancing ambiance
+                  and functionality.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
               <img
                 src="./resources/images/service_upgrades.jpg"
-                class="d-block w-100"
                 alt="Service Upgrades"
+                class="carousel-img"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Service Upgrades</h5>
                 <p>
                   Upgrading electrical service panels to accommodate increased
@@ -179,10 +200,10 @@
             <div class="carousel-item">
               <img
                 src="./resources/images/fire_alarm_installation.jpg"
-                class="d-block w-100"
                 alt="Fire Alarm Installation"
+                class="carousel-img"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Fire Alarm Installation</h5>
                 <p>
                   Installing and maintaining fire alarm systems to ensure safety
@@ -193,10 +214,10 @@
             <div class="carousel-item">
               <img
                 src="./resources/images/electrical_troubleshooting.jpg"
-                class="d-block w-100"
-                alt="Electrical Troubleshooting"
+                alt="Fire Alarm Installation"
+                class="carousel-img"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Electrical Troubleshooting</h5>
                 <p>
                   Diagnosing and fixing electrical issues to restore
@@ -207,10 +228,10 @@
             <div class="carousel-item">
               <img
                 src="./resources/images/high_low_voltage.png"
-                class="d-block w-100"
                 alt="High & Low Voltage"
+                class="carousel-img"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>High & Low Voltage</h5>
                 <p>
                   Specialized installation and maintenance of both high and low
@@ -221,10 +242,10 @@
             <div class="carousel-item">
               <img
                 src="./resources/images/service_upgrades_2.jpg"
-                class="d-block w-100"
                 alt="Service Upgrades"
+                class="carousel-img"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Service Upgrades</h5>
                 <p>
                   Upgrading electrical service with utility companies for
@@ -232,6 +253,7 @@
                 </p>
               </div>
             </div>
+
           </div>
           <a
             class="carousel-control-prev"
@@ -280,7 +302,7 @@
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">
+              <button type="submit" class="btn">
                 Send Message
               </button>
             </form>
